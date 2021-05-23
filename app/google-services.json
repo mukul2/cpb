@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "938544041797",
+    "firebase_url": "https://cyberpolice-26083.firebaseio.com",
+    "project_id": "cyberpolice-26083",
+    "storage_bucket": "cyberpolice-26083.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938544041797:android:6415830ccf2f2954",
+        "android_client_info": {
+          "package_name": "com.mkl.cyberpolicebogura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938544041797-up87nk91acntqrmhrhen0s52p1tvnrt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mkl.cyberpolicebogura",
+            "certificate_hash": "967c5d15a838161a69e4efa3876cba6f9460e122"
+          }
+        },
+        {
+          "client_id": "938544041797-9ro725eb2t7eot8ppuf0r9d28nd48nr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAov_NkJwiqqOG8jz6nCoY0KxrvOJxmSLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938544041797-9ro725eb2t7eot8ppuf0r9d28nd48nr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

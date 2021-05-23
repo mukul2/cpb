@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mkl.cyberpolicebogura.activity.ComplaintDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/green"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:padding="20dp"
+                android:onClick="back"
+                android:background="@android:color/transparent"
+                android:src="@drawable/left_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+
+                android:layout_marginLeft="70dp"
+                android:text="Details"
+                android:textColor="@android:color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_marginTop="60dp"
+       android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Murder"
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_department"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="11 Feb 04:40 PM"
+            android:paddingBottom="0dp"
+            android:id="@+id/tv_time"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="11 Feb 04:40 PM"
+            android:paddingBottom="0dp"
+            android:id="@+id/tv_type"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="11 Feb 04:40 PM"
+            android:paddingBottom="15dp"
+            android:id="@+id/tv_sender_location"
+            android:layout_height="wrap_content"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:nestedScrollingEnabled="true"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_detail"
+            android:autoLink="web"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Mark as seen"
+            android:id="@+id/tv_seen_status"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle_dark_lite"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

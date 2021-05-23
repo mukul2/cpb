@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mkl.cyberpolicebogura.activity.SendComplaintActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:padding="20dp"
+                android:onClick="back"
+                android:src="@drawable/left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="অভিযোগ"
+                android:textColor="@android:color/white"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="58dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="জেলা"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_unselected">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spinnerDistrict"
+                        android:layout_height="match_parent">
+
+                    </Spinner>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="ধরণ"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_unselected">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spinnerType"
+                        android:layout_height="match_parent">
+
+                    </Spinner>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="বিষয়"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_unselected">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spinnerSubject"
+                        android:layout_height="match_parent">
+
+                    </Spinner>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="অভিযোগদাতার নাম *"
+                android:textSize="17dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_selector"
+                android:gravity="start"
+                android:lines="1"
+                android:id="@+id/ed_reporter"
+                android:padding="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="অভিযোগদাতার মোবাইল *"
+                android:textSize="17dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_selector"
+                android:gravity="start"
+                android:lines="1"
+                android:id="@+id/ed_reporter1"
+                android:padding="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* প্রয়োজনে অভিযোগ দাতার সাথে যোগাযোগ করা হতে পারে"
+                android:textSize="12dp"
+                android:paddingLeft="0dp"
+                android:paddingBottom="00dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="বর্ণনা"
+                android:textSize="17dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_selector"
+                android:gravity="start"
+                android:lines="4"
+                android:id="@+id/ed_body"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addAttachment"
+                android:text="Attachment"
+                android:drawableLeft="@drawable/attachment"
+                android:drawablePadding="10dp"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="100dp" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerView"
+                android:nestedScrollingEnabled="true"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:onClick="sendComplaint"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
